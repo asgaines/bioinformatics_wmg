@@ -63,3 +63,24 @@ To run test suite:
 ```
 docker run -it --rm --name wmgq2_run --entrypoint=python3 wmgq2 -m unittest
 ```
+
+## q3
+
+Determine copy number variant given NGS sequence read data for 1) baseline reads and 2) variant reads.
+
+### Build
+
+```
+cd q3
+docker build -t wmgq3 .
+```
+
+### Run
+
+```
+docker run -it --rm --name wmgq3_run -v ${PWD}:/usr/src/app wmgq3
+```
+
+### Visualize
+
+Open graph written to `out/results_visualization.png`
