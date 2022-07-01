@@ -1,5 +1,7 @@
 echo "Beginning pipeline"
 
+mkdir out
+
 echo "Indexing reference genome"
 bowtie2-build ngsdata/toy_genome.fa out/toy_genome_index
 
